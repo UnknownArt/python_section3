@@ -15,8 +15,9 @@ s = requests.Session()
 url = 'http://httpbin.org/get'
 headers = {'user-agent':'myPythonApp_1.0.0'}
 
-#r = s.get(url,headers=headers)
+r = s.get(url,headers=headers)
 #print(r.text)
+print (r.text)
 
 s.close()
 
