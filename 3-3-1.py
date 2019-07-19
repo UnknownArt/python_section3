@@ -7,7 +7,12 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 #r = requests.get('https://api.github.com/events')
 #r.raise_for_status()
+
 #print(r.text)
+
+r.raise_for_status()
+print(r.text)
+
 
 jar = requests.cookies.RequestsCookieJar()
 jar.set('name','kim',domain='httpbin.org',path='/cookies')
